@@ -5,7 +5,7 @@ This is a solution to the [CSS Box Model tutorial No. 5 of HTML & CSS Is Hard](h
 ## Table of contents
 
 - [Overview](#overview)
-  - [Screenshots](#screenshots)
+  - [Screenshot](#screenshot)
   - [Links](#links)
 - [My process](#my-process)
   - [Built with](#built-with)
@@ -17,14 +17,14 @@ This is a solution to the [CSS Box Model tutorial No. 5 of HTML & CSS Is Hard](h
 
 ## Overview
 
-### Screenshots
+### Screenshot
 
-![](./screenshot.jpg)
+![CSS Selectors screenshot](./css-selectors.png)
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [CSS Selectors solution](https://github.com/jugglingdev/css-selectors)
+- Live Site URL: [CSS Selectors live site](https://jugglingdev.github.io/css-selectors/)
 
 ## My process
 
