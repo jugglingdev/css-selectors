@@ -1,6 +1,6 @@
-# Interneting Is Hard - CSS Box Model
+# Interneting Is Hard - CSS Selectors
 
-This is a solution to the [CSS Box Model tutorial No. 5 of HTML & CSS Is Hard](https://www.internetingishard.com/html-and-css/css-box-model/).
+This is a solution to the [CSS Selectors tutorial No. 6 of HTML & CSS Is Hard](https://www.internetingishard.com/html-and-css/css-selectors/).
 
 ## Table of contents
 
@@ -30,33 +30,85 @@ This is a solution to the [CSS Box Model tutorial No. 5 of HTML & CSS Is Hard](h
 
 ### Built with
 
-- Semantic HTML5 markup
-- CSS custom properties
+- HTML5
+- CSS
 
 ### What I learned
 
-Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge.
+While I'd already learned about type selectors in previous tutorials, this tutorial covered class selectors, descendant selectors, pseudo-classes, and ID selectors.
 
-To see how you can add code snippets, see below:
+I really got to see how setting up `<div>` elements with classes helps with styling a page.  I also saw once again how convenient it is to make reusable code with selectors.
 
-```html
-<h1>Some HTML code I'm proud of</h1>
-```
+By the way, pseudo-classes are cool!  I learned about the classic link styles including:
+- `:link`
+- `:visited`
+- `:hover`
+- `:active`
+
+Other pseudo-classes in this tutorial were `:last-of-type` and `:first-of-type`.
+
+As far as ID selectors go, I learned that it's best to avoid them for the sake of preserving URL fragments.  It can get messy to use a bunch of `id` attributes for both URL fragments and styling, especially if you go to edit the URLs of multiple sections and forget to update the stylesheet.
+
+*Side-note: I noticed that markdown uses `#` for URL fragments in this very doc!  Neat connection!*
+
+The last topic was on specificity, which goes from greatest to least like this:
+- `#id`
+- `.class:pseudo-class`
+- `type:pseudo-class` and `.class descendant-type`
+- `.class`
+- `type`
+
+New code snippets from this tutorial include:
 
 ```css
-.proud-of-this-css {
-  color: papayawhip;
+/* Classic psuedo-class styles for links */
+a:link {
+  color: blue;
+  text-decoration: none;
 }
+a:visited {
+  color: purple;
+}
+a:hover {
+  color: aqua;
+  text-decoration: underline;
+}
+a:active {
+  color: red;
+}
+
+/* Optional add-ons */
+a:visited:hover {
+  color: orange;
+}
+a:visited:active {
+  color: red;
+}
+```
+
+```html
+<!-- URL fragment from the same page -->
+<a href="#fragment">Go to fragment</a>
+
+<!-- URL fragment from a different page -->
+<a href="/path/#fragment">Go to fragment</a>
 ```
 
 ### Continued development
 
-Use this section to outline areas that you want to continue focusing on in future projects. These could be concepts you're still not completely comfortable with or techniques you found useful that you want to refine and perfect.
+One topic brought up was child selectors, a stricter variant of the descendant selector because of its requirement that the second selector must be a direct child of the first.  I'm interested to see where this will turn up.
+
+I'm also super curious about other use cases for pseudo-classes.  There's a certain amount of mystery about them that I find intriguing.
+
+Finally, URL fragments were touched on in this tutorial, but I'd like to work with them more in bigger projects.
 
 ### Useful resources
 
-- [Example resource 1](https://www.example.com) - This helped me for XYZ reason. I really liked this pattern and will use it going forward.
-- [Example resource 2](https://www.example.com) - This is an amazing article which helped me finally understand XYZ. I'd recommend it to anyone still learning this concept.
+- [MDN Child Combinator](https://developer.mozilla.org/en-US/docs/Web/CSS/Child_combinator) - A look at child selectors, a stricter selector than descendant selectors as the second selector must be a direct child of the first.
+
+- [MDN Pseudo-Classes](https://developer.mozilla.org/en-US/docs/Web/CSS/Pseudo-classes) - More pseudo-classes!
+
+- [BEM](https://getbem.com/introduction/) - A methodology for structured CSS that makes *everything* a class selector.
 
 ## Author
 
